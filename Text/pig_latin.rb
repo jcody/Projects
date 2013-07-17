@@ -5,12 +5,12 @@
 
 # "egg" => "egg-way", "hello" => "ello-hay"
 
-input = gets.strip
+input = gets.strip.downcase
 
 if ["a", "e", "i", "o", "u"].include? input.chr then
-  input += "-way"
+  input << "-way"
 else
-  input += "-#{input[0]}ay"
+  input << "-#{input.chr}ay"
   input.slice!(0)
 end
 
