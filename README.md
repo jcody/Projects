@@ -89,7 +89,7 @@ Networking
 
 **Chat Application (IRC or MSN Style)** – Create a chat application that can create simple chat rooms like on Internet Relay Chat (IRC) or a more direct chatting style like MSN. For added complexity, create your own protocol to facilitate this chatting.
 
-**Fetch Current Weather** – Get the current weather for a given zip/postal code.
+~~[**Fetch Current Stock**](https://github.com/JCody/Projects/blob/master/network/stock.rb) – Get the current stock quota of given companies and chart historical performances.~~
 
 **P2P File Sharing App** – Create a program like LimeWire, FrostWire, Bearshare, or a torrent style application.
 
