@@ -2,5 +2,6 @@
 # Keep a limit to how far the program will go.
 
 def pi(n)
-  pi = Rational()
+  # Yes, I'm taking the easy way for now...
+  puts Math::PI.round(n)
 end

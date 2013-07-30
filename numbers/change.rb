@@ -16,3 +16,9 @@ def change(cost, money)
   else puts "Not enough money" end
 
 end
+
+
+$(window).onScroll(function(e) {
+  var theta = $(window).scrollTop() % Math.PI;
+  $('.logo').css({ transform: 'rotate(' + theta + 'rad)' });
+});
