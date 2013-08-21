@@ -1,17 +1,18 @@
 # Have the user enter a number and find all Prime Factors (if there are any) and display them.
 
-def factor(num)
+def factorize(num)
   primes = []
 
-  for (i=2; i<num; i++)
-    if num%i == 0
-      factor(i)
-      primes.push(i)
-      return true
-    elsif num%i != 0
-      return false
-    end
+  square = Math.sqrt(num)
+
+  if num < 2 
+    return false
   end
 
-  puts primes
+  for i in 2..square
+    if num%i == 0 then return false
+  end
+
+  return true
+end
 end
