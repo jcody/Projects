@@ -9,7 +9,7 @@ def change(cost, money)
     q, remaining = (change/0.25).floor, change%0.25
     d, remaining = (remaining/0.1).floor, remaining%0.1
     n, remaining = (remaining/0.05).floor, remaining%0.05
-    p = (remaining/0.01).floor
+    p = (remaining/0.01).ceil
 
     puts "#{q} Quarters | #{d} Dimes | #{n} Nickels | #{p} Pennies"
 
@@ -18,7 +18,7 @@ def change(cost, money)
 end
 
 
-$(window).onScroll(function(e) {
-  var theta = $(window).scrollTop() % Math.PI;
-  $('.logo').css({ transform: 'rotate(' + theta + 'rad)' });
-});
+# $(window).onScroll(function(e) {
+#   var theta = $(window).scrollTop() % Math.PI;
+#   $('.logo').css({ transform: 'rotate(' + theta + 'rad)' });
+# });
